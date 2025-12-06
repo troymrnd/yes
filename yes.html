@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pretty Wifey Design - Highest Layout</title>
+<style>
+    /* The hover-button styles are no longer needed since we are making 
+    the whole container clickable. We only need the container styles. 
+    */
+    .icon-container {
+        /* This class is added to the div inside the <a> tag */
+        position: relative; 
+        background-color: white; 
+        border-radius: 20px; 
+        padding: 20px; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        box-shadow: 0 0 0 4px #ffe680; /* Base shadow - will be overridden by inline styles */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+</style>
+</head>
+<body style="background-color: #f7e6e9; display: flex; flex-direction: column; align-items: center; padding: 10px 20px; margin: 0; font-family: 'Brush Script MT', cursive, sans-serif; min-height: 100vh;">
+
+    <h1 style="font-size: 48px; color: #d04d8f; font-weight: normal; text-align: center; margin-top: 10px; margin-bottom: 30px; line-height: 1.2;">
+        For my Pretty<br>wifey
+    </h1>
+
+    <div style="display: flex; flex-direction: column; gap: 30px; width: 100%; max-width: 350px;">
+
+        <a href="https://troymrnd.github.io/image/" target="_blank" style="text-decoration: none; cursor: pointer;">
+            <div class="icon-container" 
+                 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 0 5px #ff9900';" 
+                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px #ffe680';" 
+                 style="
+                     box-shadow: 0 0 0 4px #ffe680; /* Re-apply initial shadow color */
+                 ">
+                <div style="font-size: 80px; color: #555555; height: 100px; display: flex; align-items: center;">
+                    📸
+                </div>
+            </div>
+        </a>
+
+        <a href="https://troymrnd.github.io/music/" target="_blank" style="text-decoration: none; cursor: pointer;">
+            <div class="icon-container"
+                 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 0 5px #d04d8f';" 
+                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px #f5a6b2';" 
+                 style="
+                     box-shadow: 0 0 0 4px #f5a6b2; /* Re-apply initial shadow color */
+                     position: relative; /* Keep relative position for the triangle */
+                 ">
+                <div style="font-size: 80px; color: #555555; height: 100px; display: flex; align-items: center;">
+                    🎧
+                </div>
+                <div style="position: absolute; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 30px solid white; opacity: 0.9; left: 50%; top: 50%; transform: translate(-50%, -50%);"></div>
+            </div>
+        </a>
+
+        <a href="https://troymrnd.github.io/heart/" target="_blank" style="text-decoration: none; cursor: pointer;">
+            <div class="icon-container" 
+                 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 0 5px #ff9900';" 
+                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px #ffe680';" 
+                 style="
+                     box-shadow: 0 0 0 4px #ffe680; /* Re-apply initial shadow color */
+                 ">
+                <div style="font-size: 80px; color: #555555; height: 100px; display: flex; align-items: center;">
+                    🌸
+                </div>
+            </div>
+        </a>
+        
+        <a href="https://troymrnd.github.io/note/" target="_blank" style="text-decoration: none; cursor: pointer;">
+            <div class="icon-container" 
+                 onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 0 5px #ff9900';" 
+                 onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 0 4px #ffe680';" 
+                 style="
+                     box-shadow: 0 0 0 4px #ffe680; /* Re-apply initial shadow color */
+                 ">
+                <div style="font-size: 80px; color: #555555; height: 100px; display: flex; align-items: center;">
+                    📔
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
